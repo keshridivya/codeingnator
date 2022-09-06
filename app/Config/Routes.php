@@ -43,6 +43,10 @@ $routes->group('',['filter'=>'authfilter'], function($routes){
     $routes->match(['get','post'],'checkLogin','Project::checkLogin');
     $routes->get('Registration','Dashboard::businessRegis');
     $routes->get('Dashboard','Dashboard::Dashboard');
+    $routes->get('Business','Dashboard::businessForm');
+    // $routes->match(['get','post'],'busiForm','Dashboard::busiForm');
+    $routes->get('delete/(:any)','Dashboard::deleteBusiness/$1');
+    $routes->match(['get','post'],'edit/(:any)','Dashboard::businessForm/$1');
 });
 
 $routes->group('',['filter'=>'alreadylogged'], function($routes){

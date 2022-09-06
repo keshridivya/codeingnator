@@ -47,15 +47,16 @@
     <script>
     $(document).ready(function () {
     $('#example').DataTable();
-});
+    });
 
-</script>
-<script>
+    </script>
+    <script>
         $('.modalWhats').click(function(){
-    let id=$(this).data('id');
-    $('#exampleModalrr').show();
-})
-      </script>
+            alert('gf');
+            // let id=$(this).data('id');
+            $('#exampleModalrr').show();
+        });
+    </script>
 </body>
 
 </html>

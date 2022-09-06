@@ -13,7 +13,7 @@
         <div class="main-header">
             <h4>Business Registration</h4>
             <div style="width:100%">
-                <a href="" class="btn btn-primary float-end mr-4">+ Add</a>
+                <a href="<?php echo base_url('Business') ?>" class="btn btn-primary float-end mr-4">+ Add</a>
                 <a href="" class="btn btn-warning float-end">Card</a>
             </div>
             <div class="card">
@@ -24,29 +24,37 @@
                     <table id="example" class="table table-striped" style="width:100%">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Salary</th>
+                                <th>S.no</th>
+                                <th>Owner Name </th>
+                                <th>Mobile No</th>
+                                <th>Email</th>
+                                <th>Business Name</th>
+                                <th>Office Address</th>
                                 <th>Action</th>
                                 <th>Add Social Media</th>
                             </tr>
                         </thead>
                         <tbody>
+                        <?php
+                        //ucfirst means first letter capital
+                        if(!empty($result)){ 
+                                        $count=1;
+                                        foreach($result as $row){
+                                        ?>
                             <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                <td>2011-04-25</td>
-                                <td>$320,800</td>
-                                <td><a href="">delete</a></td>
-                                <td><a href='' data-bs-toggle="modal"  class="btn btn-success rounded-circle modalWhats" title="Social Media" data-id="1"><i class="fa fa-whatsapp"></i></a>
+                                <td><?=  $count; ?></td>
+                                <td><?= ucfirst($row->owner_name); ?></td>
+                                <td><?= $row->phone; ?></td>
+                                <td><?= $row->email; ?></td>
+                                <td><?= $row->business_name; ?></td>
+                                <td><?= $row->office_address; ?></td>
+                                <td><a href="<?= base_url('delete/'.$row->id) ?>" class="btn btn-warning rounded-circle"><i class="fa fa-trash"></i></a>
+                                <a href="<?= base_url('edit/'.$row->id) ?>" class="btn btn-primary rounded-circle"><i class="fa fa-edit"></i></a></td>
+                                <td><a href='exampleModalrr' data-bs-toggle="modal"  class="btn btn-success rounded-circle modalWhats" title="Social Media" data-id="1" ><i class="fa fa-whatsapp"></i></a>
                                 <a href='' class="btn btn-primary rounded-circle" title="Social Media" data-id="2"><i class="fa fa-facebook"></i></a>
                                 </td>
                             </tr>
+                            <?php } $count++; } ?>
                     </table>
                 </div>
             </div>

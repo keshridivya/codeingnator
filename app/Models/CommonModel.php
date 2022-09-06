@@ -17,5 +17,34 @@ class CommonModel extends Model{
         $query=$builder->get();
         return $query->getResult();
     }
+    public function insertBusinessForm($table,$insertBusinessValue){
+        $value = $this->db->table($table);
+        $sql = $value->insert($insertBusinessValue);
+        return $sql;
+    }
+    public function selectBusiness($table){
+        $value=$this->db->table($table);
+        $builder=$value->select('*');
+        $query=$builder->get();
+        return $query->getResult();;
+    }
+    public function deleteBusiValue($table,$where){
+        $query=$this->db->table($table);
+        return $query->delete($where);
+    }
+    public function selectBusinessUpdate($table,$where){
+        $value=$this->db->table($table);
+        $builder=$value->select('*');
+        $builder->where($where);
+        $query=$builder->get();
+        $this->db->getLastQuery();
+        return $query->getResult();
+    }
+    public function insertBusinessUpdate($table,$where,$data){
+        $value = $this->db->table($table);
+        $value->where($where);
+        $sql = $value->update($where);
+        return $sql;
+    }
 }
 ?>
