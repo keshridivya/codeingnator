@@ -78,6 +78,7 @@ class Project extends BaseController{
         else{
             $email=$this->request->getPost("email");
             $password=$this->request->getPost("password");
+            $chk=$this->request->getPost("chk");
             echo $password;
             $model=new CommonModel();
             $where=array('email'=>$email);
@@ -87,13 +88,19 @@ class Project extends BaseController{
                 $empid=$row->id;
             }
             $checkpass=Hash::check_password($password,$pass);
-            if(!$checkpass){
-                session()->setFlashdata('fail','Incorrect password');
-                return redirect()->to(base_url('/'))->withInput();
+            if($checkpass){
+                if($chk ==1){
+                    setcookie('email', $email, time() + (86400 * 30), "/");
+                    setcookie('password', $password, time() + (86400 * 30), "/");
+                }
+                session()->set('logged',$empid);
+                return redirect()->to(base_url('/Dashboard'));  
+                
             }
             else{
-               session()->set('logged',$empid);
-               return redirect()->to(base_url('/Dashboard'));  
+               
+               session()->setFlashdata('fail','Incorrect password');
+               return redirect()->to(base_url('/'))->withInput();
                  
             }
         
@@ -102,9 +109,24 @@ class Project extends BaseController{
 
     public function logout(){
         if(session()->has('logged')){
+            setcookie("email","", time() - 3600);
+            setcookie("password","", time() - 3600);
             session()->remove('logged');
             return redirect()->to(base_url('/'))->with('fail','you are logged out');
         }
+    }
+
+    public function forgetPassword(){
+        $model= new CommonModel();
+        $email = $this->input->post('email');      
+         $findemail = $this->usermodel->ForgotPassword($email);  
+         if($findemail){
+          $this->model->sendpassword($findemail);        
+           }else{
+          $this->session->set_flashdata('msg',' Email not found!');
+          redirect(base_url('/'),'refresh');
+           }
+        return view('pages/forgetPassword');
     }
    
 }

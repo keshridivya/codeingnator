@@ -36,22 +36,23 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('welcome', 'Home::index');
-$routes->get('/', 'Project::index');
-$routes->get('logout','Project::logout');
 
 $routes->group('',['filter'=>'authfilter'], function($routes){
-    $routes->match(['get','post'],'checkLogin','Project::checkLogin');
     $routes->get('Registration','Dashboard::businessRegis');
     $routes->get('Dashboard','Dashboard::Dashboard');
-    $routes->get('Business','Dashboard::businessForm');
-    // $routes->match(['get','post'],'busiForm','Dashboard::busiForm');
+    // $routes->get('Business','Dashboard::businessForm');
+    $routes->match(['get','post'],'Business','Dashboard::businessForm');
     $routes->get('delete/(:any)','Dashboard::deleteBusiness/$1');
-    $routes->match(['get','post'],'edit/(:any)','Dashboard::businessForm/$1');
+    $routes->match(['get','post'],'edit/(:any)','Dashboard::busiForm/$1');
+    $routes->match(['get','post'],'Social Media','Dashboard::personal_info');
+    $routes->get('logout','Project::logout');
 });
 
 $routes->group('',['filter'=>'alreadylogged'], function($routes){
-    
+    $routes->get('/', 'Project::index');
+    $routes->match(['get','post'],'checkLogin','Project::checkLogin');
     $routes->match(['get','post'],'employee','Project::employee');
+    $routes->match(['get','post'],'forgetPassword','Project::forgetPassword');
 });
 
 /*

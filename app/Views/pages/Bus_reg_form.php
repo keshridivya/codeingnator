@@ -8,17 +8,6 @@
     margin-top:5rem
 }
 </style>
-<?php
-print_r($editRecord);
-echo $editRecord->status;
-
-foreach ($editRecord as $row);
-if(!empty($editRecord)){
-    $action = base_url('edit/'.$row->id);
-}else{
-    $action = base_url('Business');
-}
-?>
    <!--Container Main start-->
     <div class="height-100 bg-light">
         <div class="main-header">
@@ -31,30 +20,36 @@ if(!empty($editRecord)){
                     <div class="card-title">Business Registration Form</div>
                 </div>
                 <div class="card-body">
-                    <form method="post" action="<?= $action ?>">
+                    <form method="post" action="<?= base_url('Business') ?>">
                     <div class="mb-3 form-check">
                             <label class="form-label" for="exampleCheck1">Owner Name</label>
-                            <input type="text" name="name" class="form-control" id="exampleCheck1" value="<?= ucfirst($row->owner_name) ?>">
+                            <input type="text" name="name" class="form-control" id="exampleCheck1" value="<?= set_value('name'); ?>">
+                            <span class="text-danger"><?= isset($validation) ? display_error($validation,'name') : '' ?></span>
                         </div>
                         <div class="mb-3 form-check">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" value="<?= $row->email ?>" name="email">
+                            <input type="email" class="form-control" id="exampleInputEmail1" value="<?= set_value('email'); ?>" name="email">
+                            <span class="text-danger"><?= isset($validation) ? display_error($validation,'email') : '' ?></span>
                         </div>
                         <div class="mb-3 form-check">
                             <label class="form-label" for="exampleCheck1">Mobile No</label>
-                            <input type="tel" class="form-control" name="mob" id="exampleCheck1" value="<?= $row->phone ?>">
+                            <input type="tel" class="form-control" name="mob" id="exampleCheck1" value="<?= set_value('mob'); ?>">
+                            <span class="text-danger"><?= isset($validation) ? display_error($validation,'mob') : '' ?></span>
                         </div>
                         <div class="mb-3 form-check">
                             <label class="form-label" for="exampleCheck1">Whatsapp No</label>
-                            <input type="tel" class="form-control" name="whtsp" id="exampleCheck1" value="<?= $row->whatsapp_no ?>">
+                            <input type="tel" class="form-control" name="whtsp" id="exampleCheck1" value="<?= set_value('whtsp'); ?>">
+                            <span class="text-danger"><?= isset($validation) ? display_error($validation,'whtsp') : '' ?></span>
                         </div>
                         <div class="mb-3 form-check">
                             <label class="form-label" for="exampleCheck1">Business Name</label>
-                            <input type="text" class="form-control" name="busi_name" id="exampleCheck1" value="<?= $row->business_name ?>">
+                            <input type="text" class="form-control" name="busi_name" id="exampleCheck1" value="<?= set_value('busi_name'); ?>">
+                            <span class="text-danger"><?= isset($validation) ? display_error($validation,'busi_name') : '' ?></span>
                         </div>
                         <div class="mb-3 form-check">
                             <label class="form-label" for="exampleCheck1">Office Address</label>
-                            <input type="tel" class="form-control" name="office_name" id="exampleCheck1" value="<?= $row->office_address ?>">
+                            <input type="tel" class="form-control" name="office_name" id="exampleCheck1" value="<?= set_value('office_name'); ?>">
+                            <span class="text-danger"><?= isset($validation) ? display_error($validation,'office_name') : '' ?></span>
                         </div>
                         <button type="submit" class="btn btn-primary ">Submit</button>
                     </form>

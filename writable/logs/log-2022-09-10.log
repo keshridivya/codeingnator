@@ -1,0 +1,7 @@
+CRITICAL - 2022-09-10 01:45:31 --> Undefined property: App\Controllers\Project::$input
+in APPPATH/Controllers/Project.php on line 121.
+ 1 APPPATH/Controllers/Project.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Project::$input', 'APPPATH/Controllers/Project.php', 121)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Project->forgetPassword()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

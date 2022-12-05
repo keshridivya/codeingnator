@@ -38,7 +38,7 @@
                         <?php
                         //ucfirst means first letter capital
                         if(!empty($result)){ 
-                                        $count=1;
+                            $count=1;
                                         foreach($result as $row){
                                         ?>
                             <tr>
@@ -50,11 +50,12 @@
                                 <td><?= $row->office_address; ?></td>
                                 <td><a href="<?= base_url('delete/'.$row->id) ?>" class="btn btn-warning rounded-circle"><i class="fa fa-trash"></i></a>
                                 <a href="<?= base_url('edit/'.$row->id) ?>" class="btn btn-primary rounded-circle"><i class="fa fa-edit"></i></a></td>
-                                <td><a href='exampleModalrr' data-bs-toggle="modal"  class="btn btn-success rounded-circle modalWhats" title="Social Media" data-id="1" ><i class="fa fa-whatsapp"></i></a>
-                                <a href='' class="btn btn-primary rounded-circle" title="Social Media" data-id="2"><i class="fa fa-facebook"></i></a>
+                                <td>
+                                <a href="#" class="btn btn-info btn-sm btn-business-whtsp rounded-circle" data-id="<?= $row->id;?>" data-name="whatsapp"><i class="fa fa-whatsapp"></i></a>    
+                                <a href='#' class="btn btn-primary rounded-circle btn-business-whtsp" title="Social Media"  data-id="<?= $row->id;?>" data-name="facebook"><i class="fa fa-facebook"></i></a>
                                 </td>
                             </tr>
-                            <?php } $count++; } ?>
+                            <?php $count++; }  } ?>
                     </table>
                 </div>
             </div>
@@ -65,29 +66,74 @@
     <div class="modal-dialog">
         <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Insert Whatsapp Detail</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <form method="post" action="<?= base_url('Social Media'); ?>">
         <div class="modal-body">
-            <form>
+                <input type="hidden" id="business_id" name="business_id">
+                <input type="hidden" id="business_name" name="business_name">
             <div class="mb-3">
-                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                <input type="text" class="form-control" id="recipient-name">
+                <label for="name" class="col-form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name">
             </div>
             <div class="mb-3">
-                <label for="message-text" class="col-form-label">Message:</label>
-                <textarea class="form-control" id="message-text"></textarea>
+                <label for="number" class="col-form-label">Number</label>
+                <input type="text" class="form-control" id="number" name="number">
             </div>
-            </form>
+            <div class="mb-3">
+                <label for="recipient-email" class="col-form-label">Email id</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="message-text" class="col-form-label">Password</label>
+                <input type="password" name="password" id="password" class="form-control"/>
+                <i class="fa fa-eye-slash" id="togglePassword" style="cursor: pointer;position: absolute;margin-left: 85%;margin-top: -25px;"></i>
+            </div>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Send message</button>
+            <button type="submit" class="btn btn-primary">Store Detail</button>
         </div>
+        </form>
         </div>
     </div>
     </div>  
       <!-- modal -->
-      
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+    $(document).ready(function(){
+ 
+        // get Edit Product
+        $('.btn-business-whtsp').on('click',function(){
+            // get data from button edit
+            const id = $(this).data('id');
+            const name = $(this).data('name');
+
+            $('#business_id').val(id);
+            $('#business_name').val(name);
+            $('#exampleModalrr').modal('show');
+        });
+ 
+    });
+</script>
+<script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+  
+        togglePassword.addEventListener('click', () => {
+  
+            // Toggle the type attribute using
+            // getAttribure() method
+            const type = password
+                .getAttribute('type') === 'password' ?
+                'text' : 'password';
+                  
+            password.setAttribute('type', type);
+  
+            // Toggle the eye and bi-eye icon
+            this.classList.toggle('fa-eye');
+        });
+    </script>
     <!--Container Main end-->
 <?php echo view('include/footer'); ?>

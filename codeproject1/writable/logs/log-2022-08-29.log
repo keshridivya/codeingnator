@@ -1,0 +1,257 @@
+CRITICAL - 2022-08-29 02:03:24 --> trim(): Passing null to parameter #1 ($string) of type string is deprecated
+in SYSTEMPATH/Validation/Validation.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'trim(): Passing null to parameter #1 ($string) of type string is deprecated', 'SYSTEMPATH/Validation/Validation.php', 295)
+ 2 SYSTEMPATH/Validation/Validation.php(295): trim(null)
+ 3 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('mobile', 'Mobile', null, [...], [...])
+ 4 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH/Controllers/Curd.php(20): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Curd->insert()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curd))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 02:04:17 --> trim(): Passing null to parameter #1 ($string) of type string is deprecated
+in SYSTEMPATH/Validation/Validation.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'trim(): Passing null to parameter #1 ($string) of type string is deprecated', 'SYSTEMPATH/Validation/Validation.php', 295)
+ 2 SYSTEMPATH/Validation/Validation.php(295): trim(null)
+ 3 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('mobile', 'Mobile', null, [...], [...])
+ 4 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH/Controllers/Curd.php(20): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Curd->insert()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curd))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 02:04:25 --> trim(): Passing null to parameter #1 ($string) of type string is deprecated
+in SYSTEMPATH/Validation/Validation.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'trim(): Passing null to parameter #1 ($string) of type string is deprecated', 'SYSTEMPATH/Validation/Validation.php', 295)
+ 2 SYSTEMPATH/Validation/Validation.php(295): trim(null)
+ 3 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('mobile', 'Mobile', null, [...], [...])
+ 4 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH/Controllers/Curd.php(20): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Curd->insert()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curd))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 02:07:14 --> trim(): Passing null to parameter #1 ($string) of type string is deprecated
+in SYSTEMPATH/Validation/Validation.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'trim(): Passing null to parameter #1 ($string) of type string is deprecated', 'SYSTEMPATH/Validation/Validation.php', 295)
+ 2 SYSTEMPATH/Validation/Validation.php(295): trim(null)
+ 3 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('mobile', 'Mobile', null, [...], [...])
+ 4 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH/Controllers/Curd.php(20): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Curd->insert()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curd))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 02:10:27 --> trim(): Passing null to parameter #1 ($string) of type string is deprecated
+in SYSTEMPATH/Validation/Validation.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'trim(): Passing null to parameter #1 ($string) of type string is deprecated', 'SYSTEMPATH/Validation/Validation.php', 295)
+ 2 SYSTEMPATH/Validation/Validation.php(295): trim(null)
+ 3 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('mobile', 'Mobile', null, [...], [...])
+ 4 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH/Controllers/Curd.php(20): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Curd->insert()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curd))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-29 04:13:09 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 /opt/lampp/htdocs/codeigniter/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /opt/lampp/htdocs/codeigniter/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /opt/lampp/htdocs/codeigniter/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /opt/lampp/htdocs/codeigniter/app/Models/CommonModel.php(8): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/codeigniter/app/Controllers/Crud.php(37): App\Models\CommonModel->insertValue('user', Array)
+#6 /opt/lampp/htdocs/codeigniter/system/CodeIgniter.php(904): App\Controllers\Crud->insert()
+#7 /opt/lampp/htdocs/codeigniter/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#8 /opt/lampp/htdocs/codeigniter/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/codeigniter/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-08-29 04:13:09 --> No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `user` (`name`, `mobile`, `email`) VALUES (\'Sagun\', \'7057643645\', \'admin@gmail.com\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`name`, `mobile`, `email`) VALUES (\'Sagun\', \'7057643645\', \'admin@gmail.com\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`name`, `mobile`, `email`) VALUES (\'Sagun\', \'7057643645\', \'admin@gmail.com\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `mobile`, `email`) VALUES (:name:, :mobile:, :email:)', [...], false)
+ 5 APPPATH/Models/CommonModel.php(8): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Crud.php(37): App\Models\CommonModel->insertValue('user', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Crud->insert()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-29 04:14:48 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 /opt/lampp/htdocs/codeigniter/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /opt/lampp/htdocs/codeigniter/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /opt/lampp/htdocs/codeigniter/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /opt/lampp/htdocs/codeigniter/app/Models/CommonModel.php(8): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/codeigniter/app/Controllers/Crud.php(37): App\Models\CommonModel->insertValue('user', Array)
+#6 /opt/lampp/htdocs/codeigniter/system/CodeIgniter.php(904): App\Controllers\Crud->insert()
+#7 /opt/lampp/htdocs/codeigniter/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#8 /opt/lampp/htdocs/codeigniter/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/codeigniter/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-08-29 04:14:48 --> No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `user` (`name`, `mobile`, `email`) VALUES (\'Divya\', \'7057643645\', \'admin@gmail.com\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`name`, `mobile`, `email`) VALUES (\'Divya\', \'7057643645\', \'admin@gmail.com\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`name`, `mobile`, `email`) VALUES (\'Divya\', \'7057643645\', \'admin@gmail.com\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `mobile`, `email`) VALUES (:name:, :mobile:, :email:)', [...], false)
+ 5 APPPATH/Models/CommonModel.php(8): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Crud.php(37): App\Models\CommonModel->insertValue('user', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Crud->insert()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-29 04:15:38 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 /opt/lampp/htdocs/codeigniter/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /opt/lampp/htdocs/codeigniter/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /opt/lampp/htdocs/codeigniter/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /opt/lampp/htdocs/codeigniter/app/Models/CommonModel.php(8): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/codeigniter/app/Controllers/Crud.php(37): App\Models\CommonModel->insertValue('user', Array)
+#6 /opt/lampp/htdocs/codeigniter/system/CodeIgniter.php(904): App\Controllers\Crud->insert()
+#7 /opt/lampp/htdocs/codeigniter/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#8 /opt/lampp/htdocs/codeigniter/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/codeigniter/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-08-29 04:15:38 --> No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `user` (`name`, `mobile`, `email`) VALUES (\'Divya\', \'7057643645\', \'admin@gmail.com\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`name`, `mobile`, `email`) VALUES (\'Divya\', \'7057643645\', \'admin@gmail.com\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`name`, `mobile`, `email`) VALUES (\'Divya\', \'7057643645\', \'admin@gmail.com\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `mobile`, `email`) VALUES (:name:, :mobile:, :email:)', [...], false)
+ 5 APPPATH/Models/CommonModel.php(8): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Crud.php(37): App\Models\CommonModel->insertValue('user', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Crud->insert()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-29 04:17:18 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/codeigniter/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/codeigniter/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 /opt/lampp/htdocs/codeigniter/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /opt/lampp/htdocs/codeigniter/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /opt/lampp/htdocs/codeigniter/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /opt/lampp/htdocs/codeigniter/app/Models/CommonModel.php(8): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/codeigniter/app/Controllers/Crud.php(37): App\Models\CommonModel->insertValue('user', Array)
+#6 /opt/lampp/htdocs/codeigniter/system/CodeIgniter.php(904): App\Controllers\Crud->insert()
+#7 /opt/lampp/htdocs/codeigniter/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#8 /opt/lampp/htdocs/codeigniter/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/codeigniter/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-08-29 04:17:18 --> No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `user` (`name`, `mobile`, `email`) VALUES (\'pppp\', \'7057643645\', \'admin@gmail.com\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`name`, `mobile`, `email`) VALUES (\'pppp\', \'7057643645\', \'admin@gmail.com\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`name`, `mobile`, `email`) VALUES (\'pppp\', \'7057643645\', \'admin@gmail.com\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`name`, `mobile`, `email`) VALUES (:name:, :mobile:, :email:)', [...], false)
+ 5 APPPATH/Models/CommonModel.php(8): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Crud.php(37): App\Models\CommonModel->insertValue('user', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Crud->insert()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 16:58:43 --> Undefined variable $data
+in APPPATH/Models/CommonModel.php on line 8.
+ 1 APPPATH/Models/CommonModel.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH/Models/CommonModel.php', 8)
+ 2 APPPATH/Controllers/Crud.php(44): App\Models\CommonModel->insertValue('user', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Crud->insert()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 16:59:32 --> Undefined variable $data
+in APPPATH/Controllers/Crud.php on line 52.
+ 1 APPPATH/Controllers/Crud.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH/Controllers/Crud.php', 52)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Crud->insert()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 16:59:34 --> Undefined variable $data
+in APPPATH/Controllers/Crud.php on line 52.
+ 1 APPPATH/Controllers/Crud.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH/Controllers/Crud.php', 52)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Crud->insert()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 16:59:54 --> Undefined variable $data
+in APPPATH/Models/CommonModel.php on line 8.
+ 1 APPPATH/Models/CommonModel.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH/Models/CommonModel.php', 8)
+ 2 APPPATH/Controllers/Crud.php(44): App\Models\CommonModel->insertValue('user', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Crud->insert()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 17:16:16 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 872.
+ 1 SYSTEMPATH/Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Crud.php(11): CodeIgniter\Model->__call('selectQuery', [])
+ 4 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Crud->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 17:16:37 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 872.
+ 1 SYSTEMPATH/Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Crud.php(11): CodeIgniter\Model->__call('selectQuery', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Crud->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 17:16:39 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 872.
+ 1 SYSTEMPATH/Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Crud.php(11): CodeIgniter\Model->__call('selectQuery', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Crud->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 17:18:17 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 872.
+ 1 SYSTEMPATH/Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Crud.php(13): CodeIgniter\Model->__call('selectQuery', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Crud->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 17:18:23 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 872.
+ 1 SYSTEMPATH/Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Crud.php(13): CodeIgniter\Model->__call('selectQuery', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Crud->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 17:20:59 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 872.
+ 1 SYSTEMPATH/Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Crud.php(13): CodeIgniter\Model->__call('selectQuery', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Crud->index()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 17:24:56 --> Undefined variable $result
+in APPPATH/Views/pages/select.php on line 1.
+ 1 APPPATH/Views/pages/select.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'APPPATH/Views/pages/select.php', 1)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/select.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1137): CodeIgniter\View\View->render('pages/select', [], true)
+ 5 APPPATH/Controllers/Crud.php(15): view('pages/select')
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Crud->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 17:50:25 --> Call to undefined function App\Models\where()
+in APPPATH/Models/CommonModel.php on line 15.
+ 1 APPPATH/Controllers/Crud.php(14): App\Models\CommonModel->selectValue('user', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Crud->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
